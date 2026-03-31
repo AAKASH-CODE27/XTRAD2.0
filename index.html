@@ -1,0 +1,1106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>XTARD 2.0</title>
+
+  <link rel="stylesheet" href="style.css?v=13">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@600;700&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+
+  <div class="scroll-progress"></div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="logo">
+      <a href="#home"><img src="assets/images/xtard_logo.png" alt="XTARD 2.0" class="navbar-logo-img"></a>
+    </div>
+
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#home" onclick="closeMenu()">Home</a></li>
+      <li><a href="#problems" onclick="closeMenu()">Problem Statements</a></li>
+      <li><a href="#event" onclick="closeMenu()">Event Timeline</a></li>
+      <li><a href="#keypersons" onclick="closeMenu()">Key Persons</a></li>
+      <li><a href="#sponsors" onclick="closeMenu()">Sponsors</a></li>
+      <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+    </ul>
+
+    <div class="nav-right" style="display: flex; align-items: center; gap: 15px;">
+      <!-- Extra nav logo on the right -->
+      <a href="#" id="nav-extra-link" style="display: block;"><img src="assets/images/nav_uba.png" alt="Extra Logo"
+          class="nav-placeholder-img" id="nav-extra-img" style="height: 45px; object-fit: contain;"></a>
+
+      <!-- Hamburger button (visible on mobile) -->
+      <button class="hamburger" id="hamburger-btn" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+  </nav>
+
+
+  <!-- 1. HOME -->
+
+  <section id="home" class="section">
+
+    <div class="hero-layout">
+
+      <!-- LEFT: XTARD Logo with mouse parallax -->
+      <div class="hero-visual">
+
+        <!-- Animated Rings -->
+        <div class="hero-glow-ring">
+          <div class="hero-particles"></div>
+        </div>
+
+        <!-- Logo -->
+        <div class="logo-container" id="logo-container">
+          <img src="assets/images/xtard_logo.png" alt="XTARD 2.0 Logo" class="xtard-logo" id="xtard-logo">
+        </div>
+
+      </div>
+
+      <!-- RIGHT: Event info panel -->
+      <div class="hero-info-card">
+
+        <span class="hero-small-tag"><strong>XTARD 2.0</strong></span>
+
+        <h1 class="hero-main-title">Rural Innovation<br>Hackathon</h1>
+        <h2 class="hero-subtitle">Bridging the Digital Divide</h2>
+        <p class="hero-description">
+          XTARD 2.0 is a premier rural innovation hackathon where participants
+          build technology solutions to solve real-world rural challenges.
+          Join us and empower communities through innovation.
+        </p>
+
+        <a href="https://forms.gle/bBc5c3BQxoY9Qjc66" class="register-btn" id="register-btn" target="_blank"
+          rel="noopener noreferrer">Register Here</a>
+
+        <div class="countdown">
+          <div class="time-box">
+            <span id="days">00</span>
+            <p>Days</p>
+          </div>
+          <div class="time-box">
+            <span id="hours">00</span>
+            <p>Hours</p>
+          </div>
+          <div class="time-box">
+            <span id="minutes">00</span>
+            <p>Minutes</p>
+          </div>
+          <div class="time-box">
+            <span id="seconds">00</span>
+            <p>Seconds</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- 2. ABOUT -->
+
+  <section id="about" class="section">
+
+    <div class="container">
+      <div class="about-vertical-stack">
+
+        <div class="about-main-card">
+          <h2 class="section-title left-aligned">About XTARD</h2>
+          <div class="about-divider"></div>
+          <p>XTARD 2.0 is an initiative driven by Sairam Institutions to bridge the gap between technology and rural
+            development. Through this hackathon, we actively engage with rural communities to understand their
+            real-world challenges.</p>
+          <p>As engineers, we are committed to designing innovative, practical, and scalable technological solutions
+            that create meaningful impact. XTARD empowers students to apply their knowledge beyond classrooms, fostering
+            a spirit of innovation, social responsibility, and sustainable development.</p>
+
+          <div class="about-collab">
+            <h3 class="collab-title">Organized by</h3>
+            <div class="collab-logos">
+              <img src="assets/images/asset_1.png" alt="Collab 1">
+              <img src="assets/images/asset_2.png" alt="Collab 2">
+              <img src="assets/images/collab_3.png" alt="Collab 3">
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- 3. PROVE YOUR POTENTIAL -->
+
+  <section id="prove" class="section">
+
+    <div class="container">
+      <div class="prove-section">
+        <div class="prove-header">
+          <span class="prove-eyebrow">&#9889; More Than a Hackathon</span>
+          <h2 class="prove-title">Prove Your<br><span class="prove-title-accent">Potential.</span></h2>
+          <p class="prove-tagline">XTARD 2.0 is your stage — to build, to disrupt, to leave a mark.<br>Don't just
+            participate. <strong>Dominate.</strong></p>
+        </div>
+
+        <div class="prove-cards-grid">
+
+          <!-- Prize Pool -->
+          <div class="prove-card prove-card--prize">
+            <div class="prove-card-icon">&#127942;</div>
+            <div class="prove-card-badge">Grand Prize</div>
+            <div class="prove-card-amount">&#8377;50,000</div>
+            <h3 class="prove-card-title">Prize Pool</h3>
+            <p class="prove-card-desc">Compete. Innovate. Win big. Top teams take home a life-changing reward.</p>
+          </div>
+
+          <!-- Real-World Problems -->
+          <div class="prove-card">
+            <div class="prove-card-icon">&#9889;</div>
+            <h3 class="prove-card-title">Real Impact</h3>
+            <p class="prove-card-desc">Tackle problems that actually matter — rural challenges with million-person
+              reach. Your code, your solution, your impact.</p>
+          </div>
+
+          <!-- Networking -->
+          <div class="prove-card">
+            <div class="prove-card-icon">&#127758;</div>
+            <h3 class="prove-card-title">Network &amp; Grow</h3>
+            <p class="prove-card-desc">Connect with industry mentors, fellow builders, and innovators who think like
+              you. Your next co-founder might be here.</p>
+          </div>
+
+          <!-- Innovation -->
+          <div class="prove-card">
+            <div class="prove-card-icon">&#128640;</div>
+            <h3 class="prove-card-title">Unleash Innovation</h3>
+            <p class="prove-card-desc">No rules, no limits — just raw creativity and engineering. Think beyond the
+              textbook. Build beyond the ordinary.</p>
+          </div>
+
+          <!-- Recognition -->
+          <div class="prove-card">
+            <div class="prove-card-icon">&#127941;</div>
+            <h3 class="prove-card-title">Get Recognised</h3>
+            <p class="prove-card-desc">Certificates, spotlight moments, and industry recognition await the best. Your
+              work won't go unnoticed.</p>
+          </div>
+
+          <!-- Food & Refreshments -->
+          <div class="prove-card">
+            <div class="prove-card-icon">&#127860;</div>
+            <h3 class="prove-card-title">Fuelled to Build</h3>
+            <p class="prove-card-desc">Focus on ideas, not hunger — food and refreshments are fully provided
+              throughout the event. We've got your back.</p>
+          </div>
+
+        </div><!-- /.prove-cards-grid -->
+
+        <div class="prove-cta-bar">
+          <span class="prove-cta-line">&#128293; Step in. Stand out. Show the world who you are.</span>
+        </div>
+
+      </div><!-- /.prove-section -->
+    </div>
+
+  </section>
+
+
+  <!-- 4. PROBLEM STATEMENTS -->
+
+  <section id="problems" class="section">
+
+    <div class="container">
+
+      <div class="ps-section">
+
+        <h2 class="section-title ps-heading">Problem Statements</h2>
+        <p class="ps-subheading">Choose your challenge. Build your solution.</p>
+
+        <div class="ps-carousel-wrapper">
+
+          <button class="ps-nav ps-prev" id="ps-prev" aria-label="Previous">&#8249;</button>
+
+          <div class="ps-track-outer">
+            <div class="ps-track" id="ps-track">
+
+              <!-- Card 1 -->
+              <div class="ps-card">
+                <span class="ps-label">Problem Statement 01</span>
+                <h3 class="ps-title">Digital Technology &amp; Governance</h3>
+                <p class="ps-desc">Develop digital platforms that strengthen village-level microeconomies by creating
+                  interconnected value chains. Solutions should enable a circular rural economy where waste or
+                  by-products from one activity become inputs for another. The goal is to foster local entrepreneurship,
+                  ensure transparent governance, optimize resource utilization, and generate sustainable employment
+                  within rural communities.</p>
+              </div>
+
+              <!-- Card 2 -->
+              <div class="ps-card">
+                <span class="ps-label">Problem Statement 02</span>
+                <h3 class="ps-title">Social Inclusion &amp; Empowerment</h3>
+                <p class="ps-desc">Design inclusive technological systems that empower biologically, mentally, and
+                  physically challenged individuals to actively participate in society. Focus on improving accessibility
+                  to education, employment, mobility, communication, and social engagement, enabling differently abled
+                  and underprivileged communities to contribute meaningfully to economic and social development.</p>
+              </div>
+
+              <!-- Card 3 -->
+              <div class="ps-card">
+                <span class="ps-label">Problem Statement 03</span>
+                <h3 class="ps-title">Energy &amp; Environment</h3>
+                <p class="ps-desc">Create innovative and sustainable solutions addressing climate resilience and future
+                  energy demands. This includes renewable energy systems, energy-efficient infrastructure,
+                  waste-to-energy innovations, climate-adaptive technologies, and sustainable cooling or heat management
+                  systems for modern data and AI-driven environments.</p>
+              </div>
+
+              <!-- Card 4 -->
+              <div class="ps-card">
+                <span class="ps-label">Problem Statement 04</span>
+                <h3 class="ps-title">Agri-Tech (Rural Innovation)</h3>
+                <p class="ps-desc">Develop technology-driven solutions that transform agriculture and rural livelihoods.
+                  Focus on improving farm productivity, supply chain efficiency, soil and water management, crop
+                  monitoring, and market access while ensuring inclusivity for smallholder farmers and rural
+                  communities.</p>
+              </div>
+
+              <!-- Card 5 -->
+              <div class="ps-card">
+                <span class="ps-label">Problem Statement 05</span>
+                <h3 class="ps-title">Healthcare</h3>
+                <p class="ps-desc">Build practical, scalable healthcare solutions addressing real-world challenges
+                  across rural, semi-urban, and urban regions. Solutions should focus on improving accessibility,
+                  efficiency, early diagnosis, and delivery of healthcare services to underserved populations.</p>
+              </div>
+
+            </div><!-- /.ps-track -->
+          </div><!-- /.ps-track-outer -->
+
+          <button class="ps-nav ps-next" id="ps-next" aria-label="Next">&#8250;</button>
+
+        </div><!-- /.ps-carousel-wrapper -->
+
+        <!-- Dot indicators -->
+        <div class="ps-dots" id="ps-dots"></div>
+
+      </div><!-- /.ps-section -->
+
+    </div>
+
+  </section>
+
+
+  <!-- 5. EVENT TIMELINE -->
+
+  <section id="event" class="section">
+
+    <div class="container">
+
+      <h2 class="section-title">Event Timeline</h2>
+
+      <div class="timeline-wrapper">
+        <div class="timeline-progress-fill"></div>
+        <div id="timeline-container"></div>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- 5.5 GALLERY -->
+  <section id="gallery" class="section gallery-section">
+    <div class="container gallery-container">
+      <div class="section-heading about-not-selectable" style="text-align: center; margin-bottom: 50px;">
+        <h2 class="section-title" style="font-size: 3.5rem;">Xtard Chronicles</h2>
+      </div>
+
+      <div class="gallery-wrap">
+        <main class="gallery-grid" aria-live="polite">
+          <div class="gallery-hex-container" style="grid-column: 2 / span 2;">
+            <div class="gallery-flip-card">
+              <div class="gallery-flip-front">
+                <img src="assets/gallery/SAI_8555.JPG" alt="img01">
+              </div>
+              <div class="gallery-flip-back">
+                <img src="assets/gallery/SAI_8571.JPG" alt="img02">
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-hex-container" style="grid-column: 4 / span 2;">
+            <div class="gallery-flip-card">
+              <div class="gallery-flip-front">
+                <img src="assets/gallery/SAI_8580.JPG" alt="img03">
+              </div>
+              <div class="gallery-flip-back">
+                <img src="assets/gallery/SAI_8583.JPG" alt="img04">
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-hex-container" style="grid-column: 6 / span 2;">
+            <div class="gallery-flip-card">
+              <div class="gallery-flip-front">
+                <img src="assets/gallery/SAI_8585.JPG" alt="img05">
+              </div>
+              <div class="gallery-flip-back">
+                <img src="assets/gallery/SAI_8591.JPG" alt="img06">
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-hex-container" style="grid-column: 8 / span 2;">
+            <div class="gallery-flip-card">
+              <div class="gallery-flip-front">
+                <img src="assets/gallery/SAI_8599.JPG" alt="img07">
+              </div>
+              <div class="gallery-flip-back">
+                <img src="assets/gallery/SAI_8602.JPG" alt="img08">
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-hex-container" style="grid-column: 10 / span 2;">
+            <div class="gallery-flip-card">
+              <div class="gallery-flip-front">
+                <img src="assets/gallery/SAI_8606.JPG" alt="img09">
+              </div>
+              <div class="gallery-flip-back">
+                <img src="assets/gallery/SAI_8623.JPG" alt="img10">
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-hex-container" style="grid-column: 3 / span 2;">
+            <div class="gallery-flip-card">
+              <div class="gallery-flip-front">
+                <img src="assets/gallery/SAI_8626.JPG" alt="img11">
+              </div>
+              <div class="gallery-flip-back">
+                <img src="assets/gallery/SAI_8630.JPG" alt="img12">
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-hex-container" style="grid-column: 5 / span 2;">
+            <div class="gallery-flip-card">
+              <div class="gallery-flip-front">
+                <img src="assets/gallery/SAI_8633.JPG" alt="img13">
+              </div>
+              <div class="gallery-flip-back">
+                <img src="assets/gallery/SAI_8634.JPG" alt="img14">
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-hex-container" style="grid-column: 7 / span 2;">
+            <div class="gallery-flip-card">
+              <div class="gallery-flip-front">
+                <img src="assets/gallery/SAI_8644.JPG" alt="img15">
+              </div>
+              <div class="gallery-flip-back">
+                <img src="assets/gallery/SAI_8647.JPG" alt="img16">
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-hex-container" style="grid-column: 9 / span 2;">
+            <div class="gallery-flip-card">
+              <div class="gallery-flip-front">
+                <img src="assets/gallery/SAI_8649.JPG" alt="img17">
+              </div>
+              <div class="gallery-flip-back">
+                <img src="assets/gallery/SAI_8652.JPG" alt="img18">
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-hex-container" style="grid-column: 2 / span 2;">
+            <div class="gallery-flip-card">
+              <div class="gallery-flip-front">
+                <img src="assets/gallery/SAI_8666.JPG" alt="img19">
+              </div>
+              <div class="gallery-flip-back">
+                <img src="assets/gallery/SAI_8682.JPG" alt="img20">
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-hex-container" style="grid-column: 4 / span 2;">
+            <div class="gallery-flip-card">
+              <div class="gallery-flip-front">
+                <img src="assets/gallery/SAI_8696.JPG" alt="img21">
+              </div>
+              <div class="gallery-flip-back">
+                <img src="assets/gallery/SAI_8698.JPG" alt="img22">
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-hex-container" style="grid-column: 6 / span 2;">
+            <div class="gallery-flip-card">
+              <div class="gallery-flip-front">
+                <img src="assets/gallery/SAI_8708.JPG" alt="img23">
+              </div>
+              <div class="gallery-flip-back">
+                <img src="assets/gallery/SAI_8716.JPG" alt="img24">
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-hex-container" style="grid-column: 8 / span 2;">
+            <div class="gallery-flip-card">
+              <div class="gallery-flip-front">
+                <img src="assets/gallery/SAI_8722.JPG" alt="img25">
+              </div>
+              <div class="gallery-flip-back">
+                <img src="assets/gallery/SAI_8723.JPG" alt="img26">
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-hex-container" style="grid-column: 10 / span 2;">
+            <div class="gallery-flip-card">
+              <div class="gallery-flip-front">
+                <img src="assets/gallery/SAI_8739.JPG" alt="img27">
+              </div>
+              <div class="gallery-flip-back">
+                <img src="assets/gallery/SAI_8748.JPG" alt="img28">
+              </div>
+            </div>
+          </div>
+
+          <!-- Row 4 (4 items) -->
+          <div class="gallery-hex-container" style="grid-column: 3 / span 2;">
+            <div class="gallery-flip-card">
+              <div class="gallery-flip-front">
+                <img src="assets/gallery/SAI_8752.JPG" alt="img29">
+              </div>
+              <div class="gallery-flip-back">
+                <img src="assets/gallery/SAI_8555.JPG" alt="img30">
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-hex-container" style="grid-column: 5 / span 2;">
+            <div class="gallery-flip-card">
+              <div class="gallery-flip-front">
+                <img src="assets/gallery/SAI_8571.JPG" alt="img31">
+              </div>
+              <div class="gallery-flip-back">
+                <img src="assets/gallery/SAI_8580.JPG" alt="img32">
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-hex-container" style="grid-column: 7 / span 2;">
+            <div class="gallery-flip-card">
+              <div class="gallery-flip-front">
+                <img src="assets/gallery/SAI_8583.JPG" alt="img33">
+              </div>
+              <div class="gallery-flip-back">
+                <img src="assets/gallery/SAI_8585.JPG" alt="img34">
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-hex-container" style="grid-column: 9 / span 2;">
+            <div class="gallery-flip-card">
+              <div class="gallery-flip-front">
+                <img src="assets/gallery/SAI_8591.JPG" alt="img35">
+              </div>
+              <div class="gallery-flip-back">
+                <img src="assets/gallery/SAI_8599.JPG" alt="img36">
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- 6. KEY PERSONS -->
+
+  <section id="keypersons" class="section">
+
+    <div class="container">
+
+      <section class="key-persons-section">
+        <h2 class="section-title">Key Persons</h2>
+
+        <div class="team-grid">
+
+          <!-- Member 1 -->
+          <div class="team-member-card">
+            <div class="team-img-wrapper">
+              <img src="assets/images/founder_1.jpeg" alt="Dr. Sai Prakash Leo Muthu">
+            </div>
+            <h3>Dr. Sai Prakash Leo Muthu</h3>
+            <p>Chairman &amp; CEO</p>
+            <span>Sairam Institutions</span>
+            <a href="https://www.linkedin.com/in/sairamceo/" target="_blank" class="linkedin-social-icon">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </div>
+
+          <!-- Member 2 -->
+          <div class="team-member-card">
+            <div class="team-img-wrapper">
+              <img src="assets/images/founder_2.jpeg" alt="Dr. C. R. Rene Robin">
+            </div>
+            <h3>Dr. C. R. Rene Robin</h3>
+            <p>Dean (Innovation)</p>
+            <span>Sairam Institutions</span>
+            <a href="https://www.linkedin.com/in/dr-c-r-rene-robin-52708322/" target="_blank"
+              class="linkedin-social-icon">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </div>
+
+          <!-- Member 3 -->
+          <div class="team-member-card">
+            <div class="team-img-wrapper">
+              <img src="assets/images/founder_3.jpeg" alt="Dr. J. Raja">
+            </div>
+            <h3>Dr. J. Raja</h3>
+            <p>Principal – Campus 1</p>
+            <span>Sairam Institutions</span>
+            <a href="https://www.linkedin.com/in/raja-j-32b44164/" target="_blank" class="linkedin-social-icon">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </div>
+
+          <!-- Member 4 -->
+          <div class="team-member-card">
+            <div class="team-img-wrapper">
+              <img src="assets/images/founder_4.jpeg" alt="Dr. K. Palanikumar">
+            </div>
+            <h3>Dr. K. Palanikumar</h3>
+            <p>Principal – Campus 2</p>
+            <span>Sairam Institutions</span>
+            <a href="https://www.linkedin.com/in/dr-palanikumar-k-5ba50827/" target="_blank"
+              class="linkedin-social-icon">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </div>
+
+          <!-- Member 5 -->
+          <div class="team-member-card">
+            <div class="team-img-wrapper">
+              <img src="assets/images/founder_5.jpeg" alt="Dr. S. K. Umamaheswaran">
+            </div>
+            <h3>Dr. S. K. Umamaheswaran</h3>
+            <p>UBA Advisor</p>
+            <span>Sri Sairam <br>Engineering College</span>
+            <a href="https://www.linkedin.com/in/umamaheswaransk/" target="_blank" class="linkedin-social-icon">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </div>
+
+          <!-- Member 6 -->
+          <div class="team-member-card">
+            <div class="team-img-wrapper">
+              <img src="assets/images/founder_6.jpeg" alt="Mr. R. Chitrakannan"
+                onerror="this.src='assets/images/coord_5.jpeg'">
+            </div>
+            <h3>Mr. R. Chitrakannan</h3>
+            <p>UBA Coordinator</p>
+            <span>Sri Sairam <br>Engineering College</span>
+            <a href="https://www.linkedin.com/in/chithrakkannan-r-a55b42190/" target="_blank"
+              class="linkedin-social-icon">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </div>
+
+        </div>
+      </section>
+
+    </div>
+
+  </section>
+
+
+  <!-- 7. MEET OUR TEAM (COORDINATORS) -->
+
+  <section id="coordinators" class="section">
+
+    <div class="container">
+
+      <h2 class="section-title">Meet Our Team</h2>
+
+      <div class="coordinator-container">
+
+        <h3 class="subsection-title">Staff Coordinators</h3>
+
+        <div class="coordinator-grid staff-grid">
+
+          <!-- thanuja mam -->
+          <div class="card">
+            <div class="card-img-wrapper">
+              <img src="assets/images/coord_4.jpeg" alt="Staff Coordinator 2">
+            </div>
+            <h3>Mrs. Thanuja R</h3>
+            <p>Assistant Professor</p>
+            <span>Department of Chemistry</span><br>
+            <a href="https://www.linkedin.com/in/thanuja-balasundaram-332b041a9/" target="_blank"
+              class="linkedin-social-icon">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </div>
+
+          <!-- prabhu sir  -->
+          <div class="card">
+            <div class="card-img-wrapper">
+              <img src="assets/images/coord_3.jpeg" alt="Staff Coordinator 3">
+            </div>
+            <h3>Mr D Prabhu</h3>
+            <p>Assistant Professor</p>
+            <span>Department of Computer Science and Business Systems</span><br>
+            <a href="https://www.linkedin.com/in/prabhu-d-54235571/" target="_blank" class="linkedin-social-icon">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </div>
+
+          <!-- sit elp -->
+          <div class="card">
+            <div class="card-img-wrapper">
+              <img src="assets/images/coord_2.jpeg" alt="Staff Coordinator 4">
+            </div>
+            <h3>Mr. S. P. Balaji</h3>
+            <p>ELP Manager</p>
+            <!-- <a href="#" target="_blank" class="linkedin-social-icon">
+              <i class="fab fa-linkedin"></i>
+            </a> -->
+          </div>
+
+          <!-- kalaiselvi mam -->
+          <div class="card">
+            <div class="card-img-wrapper">
+              <img src="assets/images/coord_1.jpeg" alt="Staff Coordinator 4">
+            </div>
+            <h3>Dr Kalaiselvi P</h3>
+            <p>Associate Professor</p>
+            <span>Department of Artificial Intelligence and Data Science</span><br>
+            <a href="https://www.linkedin.com/in/kalaiselvi-p-1a52022b0/" target="_blank" class="linkedin-social-icon">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </div>
+
+          <!-- nalini mam -->
+          <div class="card">
+            <div class="card-img-wrapper">
+              <img src="assets/images/coord_5.jpeg" alt="Staff Coordinator 4">
+            </div>
+            <h3>Dr. M. Nalini</h3>
+            <p>Associate Professor</p>
+            <span>Department of Electronics and Instrumentation Engineering</span><br>
+            <a href="https://www.linkedin.com/in/dr-m-nalini-ssec/" target="_blank" class="linkedin-social-icon">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </div>
+
+          <!-- vijayakumari mam -->
+          <div class="card">
+            <div class="card-img-wrapper">
+              <img src="assets/images/coord_6.jpeg" alt="Staff Coordinator 4">
+            </div>
+            <h3>Dr. P. Vijayakumari</h3>
+            <p>Associate Professor</p>
+            <span>Department of Artificial Intelligence and Data Science</span><br>
+            <a href="https://www.linkedin.com/in/vijayakumari-p-bbb356367/" target="_blank"
+              class="linkedin-social-icon">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </div>
+
+        </div>
+
+        <h3 class="subsection-title student-section-gap">Student Coordinators</h3>
+
+        <div class="coordinator-grid student-grid">
+
+          <!-- Bala -->
+          <div class="card">
+            <div class="card-img-wrapper">
+              <img src="assets/images/stud_1.jpeg" alt="Student Coordinator 1">
+            </div>
+            <h3>Balavignesh S</h3>
+            <p>Chair Person </p>
+            <span>Department of Artificial Intelligence and Data Science</span><br>
+            <span>III Year</span>
+            <a href="https://www.linkedin.com/in/balavignesh-shanmugam/" target="_blank" class="linkedin-social-icon">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </div>
+
+          <!-- Srini -->
+          <div class="card">
+            <div class="card-img-wrapper">
+              <img src="assets/images/stud_2.jpeg" alt="Student Coordinator 2">
+            </div>
+            <h3>Srinivasan P</h3>
+            <p>Vice ChairPerson</p>
+            <span>Department of Computer Science Engineering</span><br>
+            <span>III Year</span>
+            <a href="https://www.linkedin.com/in/srinivasan-p-3bb0a32b7/" target="_blank" class="linkedin-social-icon">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </div>
+
+          <!-- Aakash -->
+          <div class="card">
+            <div class="card-img-wrapper">
+              <img src="assets/images/stud_3.jpg" alt="Student Coordinator 3">
+            </div>
+            <h3>Aakash P</h3>
+            <p>Treasurer</p>
+            <span>Department of Electronics and Communication Engineering </span><br>
+            <span>III Year</span>
+            <a href="https://www.linkedin.com/in/aakash-p-689b662b6/" target="_blank" class="linkedin-social-icon">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </div>
+
+          <!-- harini -->
+          <div class="card">
+            <div class="card-img-wrapper">
+              <img src="assets/images/stud_4.jpeg" alt="Student Coordinator 4">
+            </div>
+            <h3>Harini Sri A S</h3>
+            <p>Secretary</p>
+            <span>Department of Internet of Things</span><br>
+            <span>III Year</span>
+            <a href="http://linkedin.com/in/harini-sri-422577288/" target="_blank" class="linkedin-social-icon">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </div>
+
+          <!-- dhanush -->
+          <div class="card">
+            <div class="card-img-wrapper">
+              <img src="assets/images/stud_5.jpeg" alt="Student Coordinator 5">
+            </div>
+            <h3>Dhanasu M</h3>
+            <p>Marketing &amp; Outreach Lead</p>
+            <span>Department of Artificial Intelligence and Data Science</span><br>
+            <span>II Year</span>
+            <a href="https://www.linkedin.com/in/m-dhanusu" target="_blank" class="linkedin-social-icon">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </div>
+
+          <!-- yash -->
+          <div class="card">
+            <div class="card-img-wrapper">
+              <img src="assets/images/stud_6.jpeg" alt="Student Coordinator 6">
+            </div>
+            <h3>Yeshwanth K</h3>
+            <p>Design Lead</p>
+            <span>Department of Artificial Intelligence and Data Science</span><br>
+            <span>II Year</span>
+            <a href="https://www.linkedin.com/in/yeshwanth-k-98b49a328" target="_blank" class="linkedin-social-icon">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- 8. SPONSORS -->
+
+  <section id="sponsors" class="section">
+
+    <div class="container">
+
+      <h2 class="section-title">Sponsors</h2>
+
+      <div class="sponsor-invite">
+        <p class="sponsor-invite-lead">
+          For showing to sponsor our event click below.
+        </p>
+        <p class="sponsor-invite-text">
+          Your contribution plays a vital role in empowering innovation and bringing ideas to life. We deeply appreciate
+          the support of our sponsors in making XTARD 2.0 a grand success. Partner with us and be a catalyst for
+          technological advancement and rural development.
+        </p>
+        <a href="https://forms.gle/BVWhUgiUQXnC5F2WA" class="join-btn" target="_blank" rel="noopener noreferrer">Join
+          us</a>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- 8.5 FAQ -->
+  <section id="faq" class="section">
+    <div class="container faq-container">
+      <h2 class="section-title">Frequently Asked Questions</h2>
+      <div class="faq-grid">
+        <!-- left col -->
+        <div class="faq-column">
+          <div class="faq-card">
+            <div class="faq-question">
+              <h3>Is this Hackathon an online event or offline?</h3>
+              <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>This is an offline event.</p>
+            </div>
+          </div>
+          <div class="faq-card">
+            <div class="faq-question">
+              <h3>Is there any registration fee?</h3>
+              <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>Registration fee is only for shortlisted teams</p>
+            </div>
+          </div>
+          <div class="faq-card">
+            <div class="faq-question">
+              <h3>Should you stay on campus overnight?</h3>
+              <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>Yes, since it's a 24-hour hackathon, we highly encourage you to stay on campus to build without
+                interruptions.</p>
+            </div>
+          </div>
+          <div class="faq-card">
+            <div class="faq-question">
+              <h3>What are the facilities arranged by the organizers?</h3>
+              <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>We provide food, snacks, high-speed Wi-Fi, working spaces, and resting areas. Mentors will also be
+                available to help you throughout the event.</p>
+            </div>
+          </div>
+          <div class="faq-card">
+            <div class="faq-question">
+              <h3>I am a newbie, can I hack?</h3>
+              <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>Absolutely! Hackathons are a great place to learn. We will have beginner-friendly problem statements
+                and mentors to guide you.</p>
+            </div>
+          </div>
+          <div class="faq-card">
+            <div class="faq-question">
+              <h3>Does this hackathon cover both software and hardware projects?</h3>
+              <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>Yes, we welcome both software and hardware innovations that solve rural challenges.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- right col -->
+        <div class="faq-column">
+          <div class="faq-card">
+            <div class="faq-question">
+              <h3>What is the allowed team size for the hackathon?</h3>
+              <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>Your team can consist of 3 to 4 members. A mix of skills (design, coding, presentation) is highly
+                recommended.</p>
+            </div>
+          </div>
+          <div class="faq-card">
+            <div class="faq-question">
+              <h3>What should I bring for the hackathon?</h3>
+              <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>Bring your laptop, chargers, water bottle, any hardware components you need, and a lot of enthusiasm!
+              </p>
+            </div>
+          </div>
+          <div class="faq-card">
+            <div class="faq-question">
+              <h3>Will you sponsor our travel costs?</h3>
+              <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>Travel costs are typically self-sponsored, but local transportation from specific points may be
+                provided. Check our updates for more details.</p>
+            </div>
+          </div>
+          <div class="faq-card">
+            <div class="faq-question">
+              <h3>Will there be any mentoring sessions?</h3>
+              <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>Yes, industry experts and experienced professors will be circulating to evaluate your progress and
+                provide valuable feedback.</p>
+            </div>
+          </div>
+          <div class="faq-card">
+            <div class="faq-question">
+              <h3>Is inter-college participation allowed?</h3>
+              <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>Yes, inter-college teams are welcome to participate and compete!</p>
+            </div>
+          </div>
+
+          <div class="faq-card">
+            <div class="faq-question">
+              <h3>Can I change my team members after registration?</h3>
+              <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>No, you cannot change your team members after registration.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- 9. CONTACT -->
+
+  <section id="contact" class="section">
+
+    <div class="info-card contact-card">
+
+      <h2>Contact Us</h2>
+      <p class="contact-tagline">Have questions? Reach out to us through any of the channels below.</p>
+
+      <div class="contact-grid">
+
+        <!-- Phone B -->
+        <a href="tel:+916379513015" class="contact-item" target="_blank" rel="noopener noreferrer">
+          <div class="contact-icon">
+            <i class="fas fa-envelope"></i>
+          </div>
+          <div>
+            <span class="contact-label">Balavignesh S</span>
+            <span class="contact-value">+91 6379513015</span>
+          </div>
+        </a>
+
+        <!-- Phone G -->
+        <a href="tel:+919345278153" class="contact-item" target="_blank" rel="noopener noreferrer">
+          <div class="contact-icon"><i class="fas fa-phone"></i></div>
+          <div>
+            <span class="contact-label">Harini Sri S</span>
+            <span class="contact-value">+91 9345278153</span>
+          </div>
+        </a>
+
+        <!-- Mail -->
+        <a href="mailto:xtard.uba@sairam.edu.in" class="contact-item" target="_blank" rel="noopener noreferrer">
+          <div class="contact-icon">
+            <i class="fas fa-envelope"></i>
+          </div>
+          <div>
+            <span class="contact-label">Email</span>
+            <span class="contact-value">xtard.uba@sairam.edu.in</span>
+          </div>
+        </a>
+
+        <!-- Instagram -->
+        <a href="https://www.instagram.com/xtard_2.0?igsh=OGJ1cTQ1anVkYw==" class="contact-item" target="_blank"
+          rel="noopener noreferrer">
+          <div class="contact-icon contact-icon--instagram"><i class="fab fa-instagram"></i></div>
+          <div>
+            <span class="contact-label">Instagram</span>
+            <span class="contact-value">@xtard_2.0</span>
+          </div>
+        </a>
+
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/in/sairam-uba/" class="contact-item" target="_blank"
+          rel="noopener noreferrer">
+          <div class="contact-icon contact-icon--linkedin"><i class="fab fa-linkedin-in"></i></div>
+          <div>
+            <span class="contact-label">LinkedIn</span>
+            <span class="contact-value">Sairam UBA</span>
+          </div>
+        </a>
+
+        <!-- Location -->
+        <a href="https://maps.app.goo.gl/F8dPyT5Z2UwCHs9t6" class="contact-item" target="_blank"
+          rel="noopener noreferrer">
+          <div class="contact-icon contact-icon--map"><i class="fas fa-map-marker-alt"></i></div>
+          <div>
+            <span class="contact-label">Location</span>
+            <span class="contact-value">Sri Sairam Engineering College, Chennai</span>
+          </div>
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- 10. FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-logos">
+      <div class="footer-logo-item"><img src="assets/images/asset_1.png" alt="Logo 1"
+          onerror="this.style.opacity='0.3'"></div>
+      <div class="footer-logo-item"><img src="assets/images/asset_2.png" alt="Logo 2"
+          onerror="this.style.opacity='0.3'"></div>
+      <div class="footer-logo-item"><img src="assets/images/asset_3.png" alt="Logo 3"
+          onerror="this.style.opacity='0.3'"></div>
+      <div class="footer-logo-item"><img src="assets/images/asset_4.png" alt="Logo 4"
+          onerror="this.style.opacity='0.3'"></div>
+      <div class="footer-logo-item"><img src="assets/images/asset_5.png" alt="Logo 5"
+          onerror="this.style.opacity='0.3'"></div>
+      <div class="footer-logo-item"><img src="assets/images/asset_6.png" alt="Logo 5"
+          onerror="this.style.opacity='0.3'"></div>
+      <div class="footer-logo-item"><img src="assets/images/asset_7.png" alt="Logo 5"
+          onerror="this.style.opacity='0.3'"></div>
+      <div class="footer-logo-item"><img src="assets/images/asset_8.png" alt="Logo 5"
+          onerror="this.style.opacity='0.3'"></div>
+      <div class="footer-logo-item"><img src="assets/images/asset_9.png" alt="Logo 5"
+          onerror="this.style.opacity='0.3'"></div>
+      <div class="footer-logo-item"><img src="assets/images/asset_10.png" alt="Logo 5"
+          onerror="this.style.opacity='0.3'"></div>
+      <div class="footer-logo-item"><img src="assets/images/asset_11.png" alt="Logo 5"
+          onerror="this.style.opacity='0.3'"></div>
+    </div>
+    <p class="footer-copy">&copy; 2026 XTARD 2.0 &mdash; Sairam Institutions. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js?v=9"></script>
+
+</body>
+
+</html>
