@@ -271,6 +271,10 @@ h6 {
   background-image: url('assets/images/bg_village_road.png');
 }
 
+#faq {
+  background-image: url('assets/images/bg_rural_school.png');
+}
+
 
 /* ─── CONTENT CONTAINER ─── */
 
@@ -814,6 +818,8 @@ h6 {
 .key-persons-section {
   padding: 60px 20px;
   text-align: center;
+  content-visibility: auto;
+  contain-intrinsic-size: 800px;
 }
 
 .section-title {
@@ -826,11 +832,43 @@ h6 {
 
 /* GRID LAYOUT (1-2 / 3-4 / 5-6) */
 .team-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex !important; /* Forces flex for carousel */
   gap: 40px;
-  max-width: 900px;
-  margin: 0 auto;
+  max-width: none;
+  margin: 0;
+  width: max-content; /* Allow the track to be wide */
+}
+
+/* ─── INFINITE CAROUSEL ─── */
+
+.carousel-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  padding: 40px 0;
+}
+
+.carousel-track {
+  display: flex;
+  width: max-content;
+  animation: scrollInfinite 40s linear infinite;
+  will-change: transform;
+  gap: 32px;
+}
+
+/* Pause strictly on card hover to avoid empty space triggers */
+.carousel-track:has(.card:hover),
+.carousel-track:has(.team-member-card:hover) {
+  animation-play-state: paused;
+}
+
+@keyframes scrollInfinite {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
 }
 
 /* ─── CARD THEMES (GREEN VS WHITE) ─── */
@@ -1214,21 +1252,12 @@ h6 {
 }
 
 .coordinator-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  display: flex !important;
   gap: 32px;
+  width: max-content;
 }
 
-/* Centre the 5th & 6th card */
-.student-grid .card:nth-child(5),
-.staff-grid .card:nth-child(5) {
-  grid-column: 2;
-}
-
-.student-grid .card:nth-child(6),
-.staff-grid .card:nth-child(6) {
-  grid-column: 3;
-}
+/* (Grid column centering removed for carousel) */
 
 /* (Consolidated into UNIFIED PROFILE CARDS) */
 
@@ -1315,7 +1344,8 @@ h6 {
   }
 
   .coordinator-grid,
-  .sponsor-grid {
+  .sponsor-grid,
+  .team-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -1410,7 +1440,8 @@ h6 {
 @media (max-width: 600px) {
 
   .coordinator-grid,
-  .sponsor-grid {
+  .sponsor-grid,
+  .team-grid {
     grid-template-columns: 1fr;
   }
 
@@ -2332,6 +2363,8 @@ h6 {
 /* ─── GALLERY SECTION ─── */
 .gallery-section {
   background-image: url('assets/images/bg_rural_nature.png');
+  content-visibility: auto;
+  contain-intrinsic-size: 1000px;
 }
 
 /* ===== GALLERY SECTION ===== */
@@ -2341,6 +2374,7 @@ h6 {
   z-index: 40;
   padding: 80px 0;
   min-height: 100vh;
+  background-attachment: scroll !important; /* Forces scroll instead of fixed background for performance */
 }
 
 /* Wrapper */
@@ -2386,7 +2420,6 @@ h6 {
   height: 100%;
   transform-style: preserve-3d;
   transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
-  will-change: transform;
 }
 
 .gallery-hex-container:hover .gallery-flip-card {
@@ -2522,4 +2555,27 @@ h6 {
   transform: translateY(-4px);
   box-shadow: 0 10px 25px rgba(232, 197, 127, 0.5);
   color: #000;
+}
+/* ─── COORDINATOR CARDS RESPONSIVENESS ─── */
+@media (max-width: 768px) {
+  .subsection-title {
+    font-size: 1.8rem !important;
+    margin-bottom: 30px !important;
+  }
+  
+  .card, .team-member-card {
+    min-width: 260px !important;
+    padding: 25px 20px 30px !important;
+  }
+  
+  .card-img-wrapper, .team-img-wrapper {
+    width: 100px !important;
+    height: 100px !important;
+    margin-bottom: 15px !important;
+  }
+  
+  .carousel-track {
+    gap: 20px !important;
+    animation-duration: 30s !important;
+  }
 }
